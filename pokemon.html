@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa Pokémon!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav><a href="index.html"> Hem </a></nav>
+    <h1>Gissa Pokémon-spelet! 🔥</h1>
+
+    <div>
+        <button onclick="newPokemon()">Ny Pokémon!</button>
+    </div>
+
+    <div>
+        <img id="pokemonImage" style="width: 200px; height: 200px;">
+        <p id="pokemonInfo">Klicka på knappen för att få en Pokémon!</p>
+    </div>
+
+    <div>
+        <input type="text" id="guess" placeholder="Skriv Pokémon-namnet här...">
+        <button onclick="checkGuess()">Gissa!</button>
+    </div>
+
+    <button onclick="showHint()">Visa ledtråd 💡</button>
+    <p id="hint"></p>
+
+    <p id="result"></p>
+
+    <script src="pokemon.js"></script>
+    
+</body>
+
+</html>
