@@ -29,6 +29,7 @@ nav a {
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin: 0 10px;
 }
 
 nav a:hover {
@@ -95,6 +96,11 @@ button:hover {
     background-color: #5a5a5a;
 }
 
+#newGameButton {
+    display: block;
+    margin: 20px auto;
+}
+
 input {
     background-color: #3a3a3a;
     border: 1px solid #555;
@@ -107,6 +113,9 @@ input:focus {
     background-color: #404040;
 }
 
+p:empty {
+    display: none;
+}
 
 
 /* Resultat */
@@ -138,3 +147,51 @@ section {
     border: 1px solid #555;
 }
 
+#wordDisplay {
+    font-size: 2rem;     /* Större text */
+    font-weight: bold;   /* Fetare */
+    letter-spacing: 5px; /* Mer mellanrum mellan tecken */
+    margin: 20px 0;
+}
+
+.hangman-title {
+    font-size: 3rem;
+    color: #ff6b6b;  /* Röd färg */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#keyboard {
+    border: 3px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    max-width: 800px;
+}
+
+.keyboard-row {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.key {
+    margin: 3px;
+    padding: 15px 20px;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.key:hover {
+    background-color: #5a5a5a;
+}
