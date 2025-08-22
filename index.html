@@ -8,54 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
-
 <body>
 
-    <nav>
-        <a href="pokemon.html"> Pokemon Game </a>
-        <a href="hangman.html"> Hangman Game </a>
-    </nav>
+<!-- login.html -->
+<div id="step1" class="step">
+    <h2>Hej! Vad heter du?</h2>
+    <input type="text" id="nameInput" placeholder="Ditt namn">
+    <button onclick="nextStep()">Nästa</button>
+</div>
 
-    <h1>All The Links</h1>
+<div id="step2" class="step" style="display: none;">
+    <h2 id="greeting"></h2>
+    <p>Skriv in det hemliga lösenordet...</p>
+    <input type="password" id="passwordInput">
+    <button onclick="checkPassword()">Logga in</button>
+</div>
 
-    <button id="loginButton" onclick="greetings()">Logga in</button>
+<p id="password"></p>
+<p id="wrongpw"></p>
+<p id="nopw"></p>
 
-    <section>
-        <p id="welcomeback"></p>
-        <p id="test"></p>
-        <p id="password"></p>
-        <p id="wrongpw"></p>
-        <p id="nopw"></p>
-        <p id="links"></p>
-    </section>
+<div id="loginSuccess" style="display: none;">
+    <h2 id="welcomeMessage">Men.. Välkommen!</h2>
+    <a href="pokemon.html">Pokémon-spelet🎮🦖</a>
+    <a href="hangman.html">Hänga Gubbe💀</a>
+    <a href="allthelinks.html">All The Links🍿📽️</a>
+</div>
 
-    <button id="randomizerButton" onclick="randomizer()">Slumpa fram streamingtjänst!</button>
-
-    <p id="result"></p>
-
-    <section id="myLinks">
-        <h2>
-            <a href="https://www.netflix.com" target="_blank">Netflix🍿🎥</a>
-        </h2>
-        <h2>
-            <a href="https://www.hbomax.com" target="_blank">HBO Max🎬🍿</a>
-        </h2>
-        <h2>
-            <a href="https://www.disneyplus.com" target="_blank">Disney+🍿🎬</a>
-        </h2>
-        <h2>
-            <a href="https://www.primevideo.com" target="_blank">Prime Video🎬🍿</a>
-        </h2>
-        <h2>
-            <a href="https://www.twitch.com" target="_blank">Twitch🎮⭐</a>
-        </h2>
-        <h2>
-            <a href="https://www.youtube.com" target="_blank">YouTube⭐</a>
-        </h2>
-
-        <button id="logoutButton" onclick="logout()">Logga ut</button>
-
-        <script src="AllTheLinks.js"></script>
+<script src="index.js"></script>
 
 </body>
 
